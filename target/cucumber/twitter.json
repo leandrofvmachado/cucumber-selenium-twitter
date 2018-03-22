@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9743030878,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.startWebDriver()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Add a simple text tweet",
+        "description": "",
+        "id": "add-tweet;add-a-simple-text-tweet",
+        "after": [
+          {
+            "result": {
+              "duration": 10737241211,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.stopWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3536516919,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "A user is logged in",
+            "match": {
+              "location": "LoginSteps.loginUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36138858,
+              "error_message": "java.lang.NullPointerException\n\tat StepDefinitions.AddTweetsSteps.typeTweetAndHitButton(AddTweetsSteps.java:12)\n\tat ✽.When The user types the tweet and hit the button(add_tweet.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "The user types the tweet and hit the button",
+            "match": {
+              "location": "AddTweetsSteps.typeTweetAndHitButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "The tweet is posted to your timeline",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add Tweet",
+    "description": "",
+    "id": "add-tweet",
+    "keyword": "Feature",
+    "uri": "add_tweet.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4203732222,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.startWebDriver()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Successful Login",
+        "description": "",
+        "id": "login;successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 10674546237,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.stopWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55955860,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on frontpage",
+            "match": {
+              "location": "LoginSteps.assertFrontPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34499,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User insert correct password and email",
+            "match": {
+              "location": "LoginSteps.insertCorrectPasswordAndEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2970617513,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Do login",
+            "match": {
+              "location": "LoginSteps.doLogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "user_login.feature"
+  }
+]
