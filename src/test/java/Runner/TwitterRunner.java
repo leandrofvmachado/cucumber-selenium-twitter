@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber/twitter.html",
                 "pretty"
         },
-        features = "src/test/resources/Feature",
-        glue = {"StepDefinitions"}
+        features = "src/test/resources/Feature/add_tweet.feature",
+        glue = {"StepDefinitions", "BaseStepDefinitions"}
 )
 public class TwitterRunner {
 }

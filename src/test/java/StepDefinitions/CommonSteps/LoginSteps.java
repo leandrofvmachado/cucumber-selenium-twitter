@@ -1,7 +1,7 @@
 package StepDefinitions.CommonSteps;
 
+import BaseStepDefinitions.BaseSteps;
 import PageObject.FrontPage;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -24,8 +24,8 @@ public class LoginSteps {
 
     @When("^User insert correct password and email$")
     public void insertCorrectPasswordAndEmail(){
-        this.email = "l.fvm23@gmail.com";
-        this.password = "";
+        this.email = "lfvm.23@gmail.com";
+        this.password = "test123twitter";
     }
 
     @Then("^Do login$")
@@ -35,8 +35,8 @@ public class LoginSteps {
 
     @Given("^A user is logged in$")
     public void loginUser(){
-        this.email = "l.fvm23@gmail.com";
-        this.password = "";
+        this.email = "lfvm.23@gmail.com";
+        this.password = "test123twitter";
         frontPage.login(email, password);
     }
 }

@@ -1,4 +1,4 @@
-package StepDefinitions.CommonSteps;
+package BaseStepDefinitions;
 
 import PageObject.FrontPage;
 import PageObject.Page;
@@ -25,7 +25,6 @@ public class BaseSteps {
 
         parentPage = new Page();
         frontPage = parentPage.setWorkspace(driver);
-        System.out.println("asfdasfsafdads");
     }
 
     @After

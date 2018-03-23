@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 9743030878,
+              "duration": 15492391484,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 10737241211,
+              "duration": 10643211945,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3536516919,
+              "duration": 3668597744,
               "status": "passed"
             },
             "line": 4,
@@ -46,9 +46,8 @@
           },
           {
             "result": {
-              "duration": 36138858,
-              "error_message": "java.lang.NullPointerException\n\tat StepDefinitions.AddTweetsSteps.typeTweetAndHitButton(AddTweetsSteps.java:12)\n\tat ✽.When The user types the tweet and hit the button(add_tweet.feature:5)\n",
-              "status": "failed"
+              "duration": 1694835228,
+              "status": "passed"
             },
             "line": 5,
             "name": "The user types the tweet and hit the button",
@@ -59,11 +58,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 207867764,
+              "status": "passed"
             },
             "line": 6,
             "name": "The tweet is posted to your timeline",
-            "match": {},
+            "match": {
+              "location": "AddTweetsSteps.checkIfTweetWasPosted()"
+            },
             "keyword": "Then "
           }
         ]
@@ -73,84 +75,6 @@
     "description": "",
     "id": "add-tweet",
     "keyword": "Feature",
-    "uri": "add_tweet.feature"
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 4203732222,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseSteps.startWebDriver()"
-            }
-          }
-        ],
-        "line": 3,
-        "name": "Successful Login",
-        "description": "",
-        "id": "login;successful-login",
-        "after": [
-          {
-            "result": {
-              "duration": 10674546237,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseSteps.stopWebDriver()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 55955860,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is on frontpage",
-            "match": {
-              "location": "LoginSteps.assertFrontPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 34499,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User insert correct password and email",
-            "match": {
-              "location": "LoginSteps.insertCorrectPasswordAndEmail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2970617513,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Do login",
-            "match": {
-              "location": "LoginSteps.doLogin()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Login",
-    "description": "",
-    "id": "login",
-    "keyword": "Feature",
-    "uri": "user_login.feature"
+    "uri": "src/test/resources/Feature/add_tweet.feature"
   }
 ]
