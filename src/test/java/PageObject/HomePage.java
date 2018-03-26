@@ -16,36 +16,45 @@ public class HomePage extends Page{
     @FindBy(id = "tweet-box-home-timeline")
     WebElement tweetBox;
 
-    @FindBys({@FindBy(css = ".tweet-button"), @FindBy(css = ".js-tweet-btn")})
+    @FindBy(css = ".tweeting-text")
     WebElement tweetBtn;
 
-    WebElement tweet;
-
-    @FindBys({@FindBy(xpath = "//div"), @FindBy(css = ".tweet")})
+    @FindBy(css = ".js-stream-item")
     List<WebElement> tweetList;
+
+    @FindBy(css = ".delete-action")
+    WebElement deleteBtn;
+
+    WebElement tweet;
 
     public HomePage(){
         PageFactory.initElements(driver, this);
     }
 
-    public void tweet(){
+    public String tweet(){
         tweetBox.sendKeys(tweetText);
-        tweetBtn.click();
+        if(tweetBtn.isEnabled()){
+            tweetBtn.click();
+            return tweetText;
+        }else{
+            System.out.println("Tweet button not enabled");
+            return "";
+        }
     }
 
-    public boolean searchTwitter(){
-        tweet = driver.findElement(By.xpath("//*[contains(text(), \"" + tweetText + "\")]"));
-        if(tweet.isDisplayed()){
-            return true;
+    public boolean searchTwitter(String text) {
+        if(text.equals("")){
+            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), \"" + tweetText + "\")]"));
+        } else {
+            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), \"" + text + "\")]"));
         }
-        else{
-            return false;
-        }
+
+        return tweet.isEnabled();
     }
 
     public String isTimelineEmpty(){
-        if(tweetList.isEmpty()){
-            return tweetList.get(0).findElement(By.xpath("//p")).findElement(By.cssSelector(".tweet-text")).getText();
+        if(!tweetList.isEmpty()){
+            return tweetList.get(0).findElement(By.cssSelector(".tweet-text")).getText();
         }
         else{
             return "";
@@ -57,6 +66,7 @@ public class HomePage extends Page{
             WebElement lastTweet = tweetList.get(0);
             lastTweet.findElement(By.cssSelector(".IconContainer")).click();
             lastTweet.findElement(By.cssSelector(".js-actionDelete")).click();
+            deleteBtn.click();
             return true;
         }
         catch(Exception e){
@@ -65,13 +75,18 @@ public class HomePage extends Page{
     }
 
     public boolean isTweetDeleted(String text){
-        WebElement lastTweet = tweetList.get(0);
-        String lastTweetText = lastTweet.findElement(By.xpath("//p")).findElement(By.cssSelector(".tweet-text")).getText();
-        if(!lastTweetText.equals(text)){
-            return true;
+        driver.navigate().refresh();
+
+        if(!tweetList.isEmpty()){
+            if(!tweetText.equals(tweetList.get(0).findElement(By.cssSelector(".tweet-text")).getText())){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
         else{
-            return false;
+            return true;
         }
     }
 }

@@ -22,12 +22,11 @@ public class TimelineSteps {
 
     @Then("^The tweet is posted to your timeline$")
     public void checkIfTweetWasPosted(){
-        assertTrue(homePage.searchTwitter());
+        assertTrue(homePage.searchTwitter(""));
     }
 
     @Given("^The user has a tweet on the timeline$")
     public void checkTimeLine(){
-        homePage = new HomePage();
         tweetText = homePage.isTimelineEmpty();
         assertTrue(!tweetText.equals(""));
     }
@@ -40,5 +39,12 @@ public class TimelineSteps {
     @Then("^The tweet is deleted$")
     public void checkLastTweetDeleted(){
         assertTrue(homePage.isTweetDeleted(tweetText));
+    }
+
+    @Given("^The user add a tweet to his/her timeline$")
+    public void addTweet() throws InterruptedException {
+        String tweetText = homePage.tweet();
+        Thread.sleep(1000);
+        assertTrue(homePage.searchTwitter(tweetText));
     }
 }
