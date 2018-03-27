@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="759775ff-a327-415e-adb7-7daa69ac4310" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TimelineSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimelineSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -34,6 +33,19 @@
                 <element signature="e#1055#1056#0" expanded="true" />
                 <element signature="e#1117#1118#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -90,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/BaseSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/AddTweetsSteps.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/DeleteTweetSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/DeleteTweetSteps.java" />
@@ -99,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/Feature/add_tweet.feature" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1038,16 +1050,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.48.2/selenium-api-2.48.2-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1149,6 +1151,17 @@
             <element signature="e#1055#1056#0" expanded="true" />
             <element signature="e#1117#1118#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
