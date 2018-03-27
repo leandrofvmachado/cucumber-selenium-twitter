@@ -33,6 +33,7 @@ public class HomePage extends Page{
 
     public String tweet(){
         tweetBox.sendKeys(tweetText);
+
         if(tweetBtn.isEnabled()){
             tweetBtn.click();
             return tweetText;
@@ -44,12 +45,12 @@ public class HomePage extends Page{
 
     public boolean searchTwitter(String text) {
         if(text.equals("")){
-            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), \"" + tweetText + "\")]"));
+            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), '" + tweetText + "')]"));
         } else {
-            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), \"" + text + "\")]"));
+            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//p[contains(text(), \"" + text + "\")]"));
         }
 
-        return tweet.isEnabled();
+        return tweet.isDisplayed();
     }
 
     public String isTimelineEmpty(){

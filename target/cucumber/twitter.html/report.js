@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 6433485851,
+  "duration": 5428257106,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,32 +42,32 @@ formatter.match({
   "location": "LoginSteps.loginUser()"
 });
 formatter.result({
-  "duration": 2762074389,
+  "duration": 2617873661,
   "status": "passed"
 });
 formatter.match({
   "location": "TimelineSteps.addTweet()"
 });
 formatter.result({
-  "duration": 2909796223,
+  "duration": 3060241835,
   "status": "passed"
 });
 formatter.match({
   "location": "TimelineSteps.deleteLastTweet()"
 });
 formatter.result({
-  "duration": 631262148,
+  "duration": 691326858,
   "status": "passed"
 });
 formatter.match({
   "location": "TimelineSteps.checkLastTweetDeleted()"
 });
 formatter.result({
-  "duration": 2472190944,
+  "duration": 2470645288,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10710923279,
+  "duration": 10707982000,
   "status": "passed"
 });
 });

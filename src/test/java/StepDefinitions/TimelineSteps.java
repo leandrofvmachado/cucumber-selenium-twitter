@@ -42,9 +42,8 @@ public class TimelineSteps {
     }
 
     @Given("^The user add a tweet to his/her timeline$")
-    public void addTweet() throws InterruptedException {
+    public void addTweet() {
         String tweetText = homePage.tweet();
-        Thread.sleep(1000);
         assertTrue(homePage.searchTwitter(tweetText));
     }
 }
