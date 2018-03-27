@@ -45,9 +45,10 @@ public class HomePage extends Page{
 
     public boolean searchTwitter(String text) {
         if(text.equals("")){
-            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//*[contains(text(), '" + tweetText + "')]"));
+            //This situation exists because of a feature that adds a random tweet. The text is not specified on the feature, so the
+            tweet = driver.findElement(By.xpath("//*[contains(text(), '" + tweetText + "')]"));
         } else {
-            tweet = driver.findElement(By.cssSelector(".js-stream-item")).findElement(By.xpath("//p[contains(text(), \"" + text + "\")]"));
+            tweet = driver.findElement(By.xpath("//p[contains(text(), \"" + text + "\")]"));
         }
 
         return tweet.isDisplayed();

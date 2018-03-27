@@ -17,7 +17,7 @@ public class TimelineSteps {
 
     @When("^The user types the tweet and hit the button$")
     public void typeTweetAndHitButton(){
-        homePage.tweet();
+        assertTrue(!homePage.tweet().equals(""));
     }
 
     @Then("^The tweet is posted to your timeline$")
