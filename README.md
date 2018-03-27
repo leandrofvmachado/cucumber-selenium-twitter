@@ -13,4 +13,4 @@ To be developed features:
 + Change photo
 + Follow another user
 
-Contact: l.fvm23@gmail.com
+Open to reviews and suggestions on l.fvm23@gmail.com
