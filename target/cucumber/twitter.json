@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5428257106,
+              "duration": 4041995386,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 3,
-        "name": "Delete a tweet",
+        "name": "Successful Login",
         "description": "",
-        "id": "delete-tweet;delete-a-tweet",
+        "id": "login;successful-login",
         "after": [
           {
             "result": {
-              "duration": 10707982000,
+              "duration": 10652972085,
               "status": "passed"
             },
             "match": {
@@ -34,59 +34,115 @@
         "steps": [
           {
             "result": {
-              "duration": 2617873661,
+              "duration": 421638788,
               "status": "passed"
             },
             "line": 4,
-            "name": "A user is logged in",
+            "name": "User is on frontpage",
             "match": {
-              "location": "LoginSteps.loginUser()"
+              "location": "LoginSteps.assertFrontPage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 3060241835,
+              "duration": 349151,
               "status": "passed"
             },
             "line": 5,
-            "name": "The user add a tweet to his/her timeline",
+            "name": "User insert correct password and email",
             "match": {
-              "location": "TimelineSteps.addTweet()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 691326858,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "The user deletes the last tweet",
-            "match": {
-              "location": "TimelineSteps.deleteLastTweet()"
+              "location": "LoginSteps.insertCorrectPasswordAndEmail()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2470645288,
+              "duration": 2510240861,
               "status": "passed"
             },
-            "line": 7,
-            "name": "The tweet is deleted",
+            "line": 6,
+            "name": "Do login",
             "match": {
-              "location": "TimelineSteps.checkLastTweetDeleted()"
+              "location": "LoginSteps.doLogin()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2542501731,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.startWebDriver()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Unsuccessful Login",
+        "description": "",
+        "id": "login;unsuccessful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 10587147347,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.stopWebDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54469301,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on frontpage",
+            "match": {
+              "location": "LoginSteps.assertFrontPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57119,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User insert incorrect password or email",
+            "match": {
+              "location": "LoginSteps.userInsertIncorrectPasswordOrEmail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1726346195,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "A login error message is displayed",
+            "match": {
+              "location": "LoginSteps.aLoginErrorMessageIsDisplayed()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Delete Tweet",
+    "name": "Login",
     "description": "",
-    "id": "delete-tweet",
+    "id": "login",
     "keyword": "Feature",
-    "uri": "src/test/resources/Feature/delete_tweet.feature"
+    "uri": "src/test/resources/Feature/user_login.feature"
   }
 ]

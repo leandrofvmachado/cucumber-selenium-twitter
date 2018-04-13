@@ -1,73 +1,113 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Feature/delete_tweet.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Feature/user_login.feature");
 formatter.feature({
   "line": 1,
-  "name": "Delete Tweet",
+  "name": "Login",
   "description": "",
-  "id": "delete-tweet",
+  "id": "login",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5428257106,
+  "duration": 4041995386,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Delete a tweet",
+  "name": "Successful Login",
   "description": "",
-  "id": "delete-tweet;delete-a-tweet",
+  "id": "login;successful-login",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "A user is logged in",
+  "name": "User is on frontpage",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "The user add a tweet to his/her timeline",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 6,
-  "name": "The user deletes the last tweet",
+  "name": "User insert correct password and email",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "The tweet is deleted",
+  "line": 6,
+  "name": "Do login",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.loginUser()"
+  "location": "LoginSteps.assertFrontPage()"
 });
 formatter.result({
-  "duration": 2617873661,
+  "duration": 421638788,
   "status": "passed"
 });
 formatter.match({
-  "location": "TimelineSteps.addTweet()"
+  "location": "LoginSteps.insertCorrectPasswordAndEmail()"
 });
 formatter.result({
-  "duration": 3060241835,
+  "duration": 349151,
   "status": "passed"
 });
 formatter.match({
-  "location": "TimelineSteps.deleteLastTweet()"
+  "location": "LoginSteps.doLogin()"
 });
 formatter.result({
-  "duration": 691326858,
-  "status": "passed"
-});
-formatter.match({
-  "location": "TimelineSteps.checkLastTweetDeleted()"
-});
-formatter.result({
-  "duration": 2470645288,
+  "duration": 2510240861,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10707982000,
+  "duration": 10652972085,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 2542501731,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 8,
+  "name": "Unsuccessful Login",
+  "description": "",
+  "id": "login;unsuccessful-login",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 9,
+  "name": "User is on frontpage",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "User insert incorrect password or email",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "A login error message is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.assertFrontPage()"
+});
+formatter.result({
+  "duration": 54469301,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.userInsertIncorrectPasswordOrEmail()"
+});
+formatter.result({
+  "duration": 57119,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginSteps.aLoginErrorMessageIsDisplayed()"
+});
+formatter.result({
+  "duration": 1726346195,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 10587147347,
   "status": "passed"
 });
 });

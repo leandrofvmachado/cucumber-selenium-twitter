@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="759775ff-a327-415e-adb7-7daa69ac4310" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java" afterPath="$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Feature/user_login.feature" afterPath="$PROJECT_DIR$/src/test/resources/Feature/user_login.feature" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/twitter.html/report.js" afterPath="$PROJECT_DIR$/target/cucumber/twitter.html/report.js" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/twitter.json" afterPath="$PROJECT_DIR$/target/cucumber/twitter.json" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PageObject/HomePage.class" afterPath="$PROJECT_DIR$/target/test-classes/PageObject/HomePage.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonSteps/LoginSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/CommonSteps/LoginSteps.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepDefinitions/TimelineSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/StepDefinitions/TimelineSteps.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,21 +28,9 @@
       <file leaf-file-name="TimelineSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#310#311#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#656#657#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1117#1118#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,15 +48,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="user_login.feature" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/user_login.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+            <state relative-caret-position="445">
+              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#887#888#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,43 +74,18 @@
       <file leaf-file-name="LoginSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="531">
+              <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="FrontPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Password.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CommonFiles/Password.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#192#193#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#293#294#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12948">
-              <caret line="398" column="51" lean-forward="false" selection-start-line="398" selection-start-column="51" selection-end-line="398" selection-end-column="51" />
+            <state relative-caret-position="332">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -126,6 +107,7 @@
       <find>stale</find>
       <find>system</find>
       <find>twitter</find>
+      <find>assert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,22 +125,22 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/asfd" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/Page.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/Feature/user_login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/BaseSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/AddTweetsSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/DeleteTweetSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/DeleteTweetSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/BaseStepDefinitions/BaseSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/Feature/delete_tweet.feature" />
         <option value="$PROJECT_DIR$/src/test/resources/Feature/add_tweet.feature" />
         <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/CommonFiles/Password.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/test/resources/Feature/user_login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/CommonFiles/Password.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java" />
       </list>
     </option>
   </component>
@@ -388,17 +370,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="cucumber-selenium-twitter" type="b2602c69:ProjectViewProjectNode" />
               <item name="cucumber-selenium-twitter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cucumber-selenium-twitter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cucumber-selenium-twitter" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cucumber-selenium-twitter" type="b2602c69:ProjectViewProjectNode" />
@@ -486,10 +465,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,18 +709,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TwitterRunner - 2018.03.27 at 11h 25m 11s.xml">
-      <configuration name="TwitterRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwitterRunner - 2018.03.27 at 11h 26m 00s.xml">
-      <configuration name="TwitterRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwitterRunner - 2018.03.27 at 11h 37m 04s.xml">
-      <configuration name="TwitterRunner" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TwitterRunner - 2018.03.27 at 11h 37m 39s.xml">
-      <configuration name="TwitterRunner" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TwitterRunner - 2018.03.27 at 11h 38m 46s.xml">
       <configuration name="TwitterRunner" configurationId="JUnit" />
     </history-entry>
@@ -762,6 +727,18 @@
     <history-entry file="TwitterRunner - 2018.03.27 at 11h 41m 48s.xml">
       <configuration name="TwitterRunner" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TwitterRunner - 2018.03.29 at 16h 47m 45s.xml">
+      <configuration name="TwitterRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwitterRunner - 2018.04.13 at 14h 16m 42s.xml">
+      <configuration name="TwitterRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwitterRunner - 2018.04.13 at 14h 24m 08s.xml">
+      <configuration name="TwitterRunner" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TwitterRunner - 2018.04.13 at 14h 24m 47s.xml">
+      <configuration name="TwitterRunner" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -769,17 +746,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29294935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29294935" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15814696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1773163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -790,7 +768,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969216" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -817,8 +794,7 @@
           <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -834,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,17 +848,17 @@
         <state relative-caret-position="60">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#310#311#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#508#509#0" expanded="false" />
+            <element signature="e#602#603#0" expanded="false" />
+            <element signature="e#656#657#0" expanded="false" />
+            <element signature="e#923#924#0" expanded="false" />
+            <element signature="e#977#978#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1117#1118#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -895,8 +869,7 @@
           <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -905,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -975,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1042,14 +1007,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/asdf.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.48.2/selenium-support-2.48.2-sources.jar!/org/openqa/selenium/support/pagefactory/DefaultElementLocator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1072,18 +1029,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/user_login.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.48.2/selenium-api-2.48.2-sources.jar!/org/openqa/selenium/WebElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="50" column="7" lean-forward="false" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1091,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="28" column="52" lean-forward="false" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1115,6 +1062,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6045">
+          <caret line="403" column="18" lean-forward="false" selection-start-line="403" selection-start-column="18" selection-end-line="403" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1122,23 +1092,65 @@
     <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/add_tweet.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="48" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CommonFiles/Password.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding>
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#320#321#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Runner/TwitterRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="58" column="41" lean-forward="true" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/FrontPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="332">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1154,71 +1166,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PageObject/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/Feature/user_login.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="48" column="36" lean-forward="false" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/CommonSteps/LoginSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12948">
-          <caret line="398" column="51" lean-forward="false" selection-start-line="398" selection-start-column="51" selection-end-line="398" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/StepDefinitions/TimelineSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CommonFiles/Password.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
         </state>
       </provider>

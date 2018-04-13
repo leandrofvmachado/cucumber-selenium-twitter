@@ -1,5 +1,6 @@
 package PageObject;
 
+import CommonFiles.Password;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ import java.util.List;
 
 public class HomePage extends Page{
     private String tweetText = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+    private String userName = Password.getUserName();
 
     @FindBy(id = "tweet-box-home-timeline")
     WebElement tweetBox;
@@ -29,6 +31,10 @@ public class HomePage extends Page{
 
     public HomePage(){
         PageFactory.initElements(driver, this);
+    }
+
+    public boolean isLoggedIn(){
+        return driver.findElement(By.xpath("//a[contains(text(), \"" + userName + "\")]")).isDisplayed();
     }
 
     public String tweet(){

@@ -1,11 +1,13 @@
 package PageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class FrontPage extends Page {
+    private String loginErrorMessage = "O e-mail e a senha fornecidos não correspondem às informações em nossos registros. Verifique-as e tente novamente.";
     @FindBy(css = ".StaticLoggedOutHomePage-signupSubtitle")
     WebElement frontPageText;
 
@@ -35,5 +37,9 @@ public class FrontPage extends Page {
         this.email.sendKeys(email);
         this.password.sendKeys(password);
         loginBtn.click();
+    }
+
+    public boolean checkLoginErrorMessage(){
+        return driver.findElement(By.xpath("//span[contains(text(), \"" + loginErrorMessage + "\")]")).isDisplayed();
     }
 }
