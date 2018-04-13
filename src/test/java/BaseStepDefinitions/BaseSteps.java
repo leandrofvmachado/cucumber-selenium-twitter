@@ -31,7 +31,7 @@ public class BaseSteps {
 
     @After
     public void stopWebDriver() throws InterruptedException {
-        Thread.sleep(10000);
+        //Thread.sleep(2000);
         driver.quit();
     }
 

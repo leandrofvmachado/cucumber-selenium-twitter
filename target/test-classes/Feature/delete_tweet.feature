@@ -1,7 +1,9 @@
 Feature: Delete Tweet
 
-    Scenario: Delete a tweet
+    Background:
         Given A user is logged in
-        And The user add a tweet to his/her timeline
-        When The user deletes the last tweet
-        Then The tweet is deleted
+
+    Scenario: Delete a tweet
+        Given The user adds a Hello World tweet
+        When The user deletes the Hello World tweet
+        Then The Hello World tweet is deleted

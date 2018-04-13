@@ -4,7 +4,6 @@ import CommonFiles.Password;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import java.text.SimpleDateFormat;
@@ -27,6 +26,12 @@ public class HomePage extends Page{
     @FindBy(css = ".delete-action")
     WebElement deleteBtn;
 
+    @FindBy(id = "user-dropdown-toggle")
+    WebElement userOptions;
+
+    @FindBy(xpath = "//button[contains(text(), \"Log out\")]")
+    WebElement logoutBtn;
+
     WebElement tweet;
 
     public HomePage(){
@@ -37,7 +42,7 @@ public class HomePage extends Page{
         return driver.findElement(By.xpath("//a[contains(text(), \"" + userName + "\")]")).isDisplayed();
     }
 
-    public String tweet(){
+    public String tweetRandomText(){
         tweetBox.sendKeys(tweetText);
 
         if(tweetBtn.isEnabled()){
@@ -46,6 +51,18 @@ public class HomePage extends Page{
         }else{
             System.out.println("Tweet button not enabled");
             return "";
+        }
+    }
+
+    public boolean tweetSpecificText(String tweetText){
+        tweetBox.sendKeys(tweetText);
+
+        if(tweetBtn.isEnabled()){
+            tweetBtn.click();
+            return true;
+        }
+        else{
+            return false;
         }
     }
 
@@ -96,5 +113,10 @@ public class HomePage extends Page{
         else{
             return true;
         }
+    }
+
+    public void logout(){
+        userOptions.click();
+        logoutBtn.click();
     }
 }

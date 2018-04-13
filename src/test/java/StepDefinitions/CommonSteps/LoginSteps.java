@@ -44,6 +44,7 @@ public class LoginSteps {
         this.email = Password.getEmail();
         this.password = Password.getPassword();
         frontPage.login(email, password);
+        homePage = new HomePage();
         assertTrue(homePage.isLoggedIn());
     }
 

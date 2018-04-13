@@ -1,113 +1,61 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Feature/user_login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/Feature/logout.feature");
 formatter.feature({
   "line": 1,
-  "name": "Login",
+  "name": "Logout",
   "description": "",
-  "id": "login",
+  "id": "logout",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 4041995386,
+  "duration": 4290061003,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Successful Login",
+  "name": "Successful Logout",
   "description": "",
-  "id": "login;successful-login",
+  "id": "logout;successful-logout",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "User is on frontpage",
+  "name": "A user is logged in",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "User insert correct password and email",
+  "name": "The user clicks on logout",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "Do login",
+  "name": "The user is logged out",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginSteps.assertFrontPage()"
+  "location": "LoginSteps.loginUser()"
 });
 formatter.result({
-  "duration": 421638788,
+  "duration": 2897862208,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.insertCorrectPasswordAndEmail()"
+  "location": "TimelineSteps.theUserClicksOnLogout()"
 });
 formatter.result({
-  "duration": 349151,
+  "duration": 354350576,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.doLogin()"
+  "location": "TimelineSteps.theUserIsLoggedOut()"
 });
 formatter.result({
-  "duration": 2510240861,
+  "duration": 1035199531,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10652972085,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 2542501731,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 8,
-  "name": "Unsuccessful Login",
-  "description": "",
-  "id": "login;unsuccessful-login",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 9,
-  "name": "User is on frontpage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 10,
-  "name": "User insert incorrect password or email",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "A login error message is displayed",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginSteps.assertFrontPage()"
-});
-formatter.result({
-  "duration": 54469301,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.userInsertIncorrectPasswordOrEmail()"
-});
-formatter.result({
-  "duration": 57119,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.aLoginErrorMessageIsDisplayed()"
-});
-formatter.result({
-  "duration": 1726346195,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 10587147347,
+  "duration": 604591870,
   "status": "passed"
 });
 });

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 4041995386,
+              "duration": 4290061003,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 3,
-        "name": "Successful Login",
+        "name": "Successful Logout",
         "description": "",
-        "id": "login;successful-login",
+        "id": "logout;successful-logout",
         "after": [
           {
             "result": {
-              "duration": 10652972085,
+              "duration": 604591870,
               "status": "passed"
             },
             "match": {
@@ -34,115 +34,47 @@
         "steps": [
           {
             "result": {
-              "duration": 421638788,
+              "duration": 2897862208,
               "status": "passed"
             },
             "line": 4,
-            "name": "User is on frontpage",
+            "name": "A user is logged in",
             "match": {
-              "location": "LoginSteps.assertFrontPage()"
+              "location": "LoginSteps.loginUser()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 349151,
+              "duration": 354350576,
               "status": "passed"
             },
             "line": 5,
-            "name": "User insert correct password and email",
+            "name": "The user clicks on logout",
             "match": {
-              "location": "LoginSteps.insertCorrectPasswordAndEmail()"
+              "location": "TimelineSteps.theUserClicksOnLogout()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2510240861,
+              "duration": 1035199531,
               "status": "passed"
             },
             "line": 6,
-            "name": "Do login",
+            "name": "The user is logged out",
             "match": {
-              "location": "LoginSteps.doLogin()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 2542501731,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseSteps.startWebDriver()"
-            }
-          }
-        ],
-        "line": 8,
-        "name": "Unsuccessful Login",
-        "description": "",
-        "id": "login;unsuccessful-login",
-        "after": [
-          {
-            "result": {
-              "duration": 10587147347,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseSteps.stopWebDriver()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 54469301,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User is on frontpage",
-            "match": {
-              "location": "LoginSteps.assertFrontPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 57119,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User insert incorrect password or email",
-            "match": {
-              "location": "LoginSteps.userInsertIncorrectPasswordOrEmail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1726346195,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "A login error message is displayed",
-            "match": {
-              "location": "LoginSteps.aLoginErrorMessageIsDisplayed()"
+              "location": "TimelineSteps.theUserIsLoggedOut()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Login",
+    "name": "Logout",
     "description": "",
-    "id": "login",
+    "id": "logout",
     "keyword": "Feature",
-    "uri": "src/test/resources/Feature/user_login.feature"
+    "uri": "src/test/resources/Feature/logout.feature"
   }
 ]
