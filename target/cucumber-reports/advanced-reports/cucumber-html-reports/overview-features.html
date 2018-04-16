@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                10,
-                2,
-                4,
+                3,
+                1,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 16) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3,
-                2
+                0,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,7 +157,7 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   3,
+                   0,
                    1
                ],
                backgroundColor: [
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-selenium-twitter</td>
               <td>1</td>
-            <td>16 abr 2018, 12:08</td>
+            <td>16 abr 2018, 14:45</td>
     </tr>
   </tbody>
 </table>
@@ -329,105 +329,54 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_add_tweet-feature.html">Add Tweet</a></td>
+        <td class="tagname"><a href="report-feature_src-test-resources-Feature-delete_tweet-feature.html">Delete Tweet</a></td>
         
         <td      class="passed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="4330324077">4s 330ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_delete_tweet-feature.html">Delete Tweet</a></td>
-        
-        <td      class="passed"    >4</td>
-        <td >0</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">4</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="6772784143">6s 772ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_logout-feature.html">Logout</a></td>
-        
-        <td      class="passed"    >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="4724172674">4s 724ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="report-feature_user_login-feature.html">Login</a></td>
-        
-        <td >0</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td >0</td>
-        <td  class="failed"    >2</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="20255676251">20s 255ms</td>
+        <td class="duration" data-value="5493757684">5s 493ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>4</td>
-            <td>10</td>
-      <td>2</td>
-      <td>4</td>
+      <td>1</td>
+            <td>3</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>16</td>
+      <td>0</td>
+      <td>4</td>
 
-      <td>3</td>
-      <td>2</td>
-      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
 
-      <td class="duration">36s 082ms</td>
+      <td class="duration">5s 493ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>62.50%</td>
-      <td>12.50%</td>
+            <td>75.00%</td>
       <td>25.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
       <td></td>
-      <td>60.00%</td>
-      <td>40.00%</td>
+      <td>0.00%</td>
+      <td>100.00%</td>
       <td></td>
       <td></td>
-      <td>75.00%</td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

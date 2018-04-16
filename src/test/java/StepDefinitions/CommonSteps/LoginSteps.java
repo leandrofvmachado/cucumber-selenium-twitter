@@ -9,7 +9,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 
 public class LoginSteps {
@@ -24,7 +23,7 @@ public class LoginSteps {
 
     @Given("^User is on frontpage$")
     public void assertFrontPage(){
-        assertFalse(frontPage.isOnFrontPage());
+        assertTrue(frontPage.isOnFrontPage());
     }
 
     @When("^User insert correct password and email$")

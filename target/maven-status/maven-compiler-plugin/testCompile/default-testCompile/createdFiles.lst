@@ -1,5 +1,8 @@
+CommonFiles/Password.class
+PageObject/HomePage.class
 Runner/TwitterRunner.class
 BaseStepDefinitions/BaseSteps.class
 PageObject/Page.class
 StepDefinitions/CommonSteps/LoginSteps.class
+StepDefinitions/TimelineSteps.class
 PageObject/FrontPage.class

@@ -18,8 +18,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BaseSteps {
@@ -41,7 +39,8 @@ public class BaseSteps {
     }
 
     @After
-    public void stopWebDriver(Scenario scenario) {
+    public void stopWebDriver(Scenario scenario) throws InterruptedException {
+        Thread.sleep(10000);
         if (scenario.isFailed()){
             try {
                 String path;

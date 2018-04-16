@@ -54,21 +54,21 @@ public class HomePage extends Page{
         }
     }
 
-    public boolean tweetSpecificText(String tweetText){
-        tweetBox.sendKeys(tweetText);
+    public String tweetSpecificText(String tweetText){
+        String tweetTextTimestamp = tweetText + " at " +  this.tweetText;
+        tweetBox.sendKeys(tweetTextTimestamp);
 
         if(tweetBtn.isEnabled()){
             tweetBtn.click();
-            return true;
+            return tweetTextTimestamp;
         }
         else{
-            return false;
+            return "";
         }
     }
 
     public boolean searchTwitter(String text) {
         if(text.equals("")){
-            //This situation exists because of a feature that adds a random tweet. The text is not specified on the feature, so the
             tweet = driver.findElement(By.xpath("//*[contains(text(), '" + tweetText + "')]"));
         } else {
             tweet = driver.findElement(By.xpath("//p[contains(text(), \"" + text + "\")]"));

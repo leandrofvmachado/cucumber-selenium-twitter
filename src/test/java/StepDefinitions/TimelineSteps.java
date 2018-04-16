@@ -52,7 +52,8 @@ public class TimelineSteps {
 
     @Given("^The user adds a (.*) tweet$")
     public void theUserAddsAHelloWorldTweet(String tweetText) {
-        assertTrue(homePage.tweetSpecificText(tweetText));
+        String tweetTextTimestamp = homePage.tweetSpecificText(tweetText);
+        assertTrue(homePage.searchTwitter(tweetTextTimestamp));
     }
 
     @When("^The user deletes the (.*) tweet$")

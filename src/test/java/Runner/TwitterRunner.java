@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
                 "json:target/cucumber-html-reports/CucumberTestReport.json",
                 "pretty"
         },
-        features = "src/test/resources/Feature/",
+        features = "src/test/resources/Feature/delete_tweet.feature",
         glue = {"StepDefinitions", "BaseStepDefinitions"}
 )
 public class TwitterRunner {

@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="4" passed="3">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="59591" started-at="2018-04-16T15:07:23Z" finished-at="2018-04-16T15:08:23Z">
+  <suite name="BDD Test Suite" duration-ms="21782" started-at="2018-04-16T17:45:18Z" finished-at="2018-04-16T17:45:40Z">
     <groups>
       <group name="cucumber">
         <method signature="TwitterRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" class="Runner.TwitterRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regression Test" duration-ms="59591" started-at="2018-04-16T15:07:23Z" finished-at="2018-04-16T15:08:23Z">
+    <test name="Regression Test" duration-ms="21782" started-at="2018-04-16T17:45:18Z" finished-at="2018-04-16T17:45:40Z">
       <class name="Runner.TwitterRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="setUpClass" is-config="true" duration-ms="311" started-at="2018-04-16T12:07:23Z" finished-at="2018-04-16T12:07:24Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="setUpClass" is-config="true" duration-ms="345" started-at="2018-04-16T14:45:18Z" finished-at="2018-04-16T14:45:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" duration-ms="8887" started-at="2018-04-16T12:07:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-16T12:07:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Add Tweet]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" duration-ms="10555" started-at="2018-04-16T12:07:33Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-16T12:07:43Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" duration-ms="21259" started-at="2018-04-16T14:45:19Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-16T14:45:40Z">
           <params>
             <param index="0">
               <value>
@@ -33,34 +22,30 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" duration-ms="9245" started-at="2018-04-16T12:07:43Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-16T12:07:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Logout]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="feature" duration-ms="30333" started-at="2018-04-16T12:07:52Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-04-16T12:08:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Login]]>
-              </value>
-            </param>
-          </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: ]]>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Tokenlab-Dev-Meeting-Room.local', ip: '192.168.5.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d), userDataDir=/var/folders/t5/bpw4p0zd4015nsv58dsc1khm0000gn/T/.org.chromium.Chromium.1wv0FY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6cbfefb0b1a4ffa090d458ac5f351d5f
+*** Element info: {Using=css selector, value=.js-stream-item}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: 
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Tokenlab-Dev-Meeting-Room.local', ip: '192.168.5.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d), userDataDir=/var/folders/t5/bpw4p0zd4015nsv58dsc1khm0000gn/T/.org.chromium.Chromium.1wv0FY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6cbfefb0b1a4ffa090d458ac5f351d5f
+*** Element info: {Using=css selector, value=.js-stream-item}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at Runner.TwitterRunner.feature(TwitterRunner.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -83,20 +68,40 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.AssertionError: 
-	at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
-	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
-	at org.testng.AssertJUnit.assertFalse(AssertJUnit.java:41)
-	at org.testng.AssertJUnit.assertFalse(AssertJUnit.java:49)
-	at StepDefinitions.CommonSteps.LoginSteps.assertFrontPage(LoginSteps.java:27)
-	at ✽.Given User is on frontpage(user_login.feature:4)
+Caused by: org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 6 milliseconds: null
+Build info: version: '2.48.2', revision: '41bccdd10cf2c0560f637404c2d96164b67d9d67', time: '2015-10-09 13:08:06'
+System info: host: 'Tokenlab-Dev-Meeting-Room.local', ip: '192.168.5.234', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.543654 (a46b62e9900f5ac48951f8ad68d9e03eded4cc8d), userDataDir=/var/folders/t5/bpw4p0zd4015nsv58dsc1khm0000gn/T/.org.chromium.Chromium.1wv0FY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=65.0.3325.181, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6cbfefb0b1a4ffa090d458ac5f351d5f
+*** Element info: {Using=css selector, value=.js-stream-item}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:164)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:378)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:486)
+	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:341)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
+	at com.sun.proxy.$Proxy19.isEmpty(Unknown Source)
+	at PageObject.HomePage.isTweetDeleted(HomePage.java:105)
+	at StepDefinitions.TimelineSteps.theHelloWorldTweetIsDeleted(TimelineSteps.java:66)
+	at ✽.Then The Hello World tweet is deleted(src/test/resources/Feature/delete_tweet.feature:9)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="tearDownClass" is-config="true" duration-ms="63" started-at="2018-04-16T12:08:23Z" finished-at="2018-04-16T12:08:23Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.TwitterRunner@6ea12c19]" name="tearDownClass" is-config="true" duration-ms="34" started-at="2018-04-16T14:45:40Z" finished-at="2018-04-16T14:45:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
