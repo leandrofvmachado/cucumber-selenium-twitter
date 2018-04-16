@@ -2,13 +2,24 @@ package BaseStepDefinitions;
 
 import PageObject.FrontPage;
 import PageObject.Page;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
+import net.masterthought.cucumber.Reportable;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class BaseSteps {
@@ -30,8 +41,25 @@ public class BaseSteps {
     }
 
     @After
-    public void stopWebDriver() throws InterruptedException {
-        //Thread.sleep(2000);
+    public void stopWebDriver(Scenario scenario) {
+        if (scenario.isFailed()){
+            try {
+                String path;
+                path = System.getProperty("user.dir");
+                System.out.println(path);
+                new File(path+"/screenshotFailure").mkdirs();
+                FileOutputStream out = new FileOutputStream(path+"/screenshotFailure/"+scenario.getName()+".png");
+                byte[] scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+                out.write(scrFile);
+                scenario.embed(scrFile, "image/png");
+                out.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
         driver.quit();
     }
 

@@ -1,5 +1,5 @@
-PageObject/Page.class
-StepDefinitions/CommonSteps/LoginSteps.class
 Runner/TwitterRunner.class
 BaseStepDefinitions/BaseSteps.class
+PageObject/Page.class
+StepDefinitions/CommonSteps/LoginSteps.class
 PageObject/FrontPage.class
